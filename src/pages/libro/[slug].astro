@@ -1,0 +1,42 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import type { InferGetStaticParamsType, InferGetStaticPropsType, GetStaticPaths } from 'astro';
+import { getCollection,render } from 'astro:content';
+import Header from '../../components/Header.astro';
+export async function getStaticPaths(){
+  const posts = await getCollection('books');
+  return posts.map((post) => {
+    return {
+      params: { slug: post.slug },
+      props: {  post },
+    };
+  });
+} 
+
+
+const { post } = Astro.props;
+const {data,slug}=post
+const {title,img,author,description,readtime}=data
+const {Content}=await render(post)
+---
+<Layout>
+    <Header></Header>
+    <div class="px-4 mx-auto max-w-screen-xl ">
+ 
+                        <div class="flex gap=12 text-white py-8">
+                            <aside >
+                                <img transition:name={`img-${slug}`} src={`/${img}`} alt={title} class="mr-5 w-72 rounded h-full" >
+                           
+                               
+                            </aside>
+                            <main>
+                                <h1 class="uppercase ">{title}</h1>
+                                <div class="prose">
+                                    <Content></Content>
+                                </div>
+                                
+                            </main>
+                        </div>
+                           
+    </div>
+</Layout>
