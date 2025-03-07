@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from "astro:transitions";
-
+import Header from './Header.astro';
+import Footer from './Footer.astro';
 ---
 
 
@@ -16,7 +17,9 @@ import { ClientRouter } from "astro:transitions";
 	<ClientRouter></ClientRouter>
 	</head>
 	<body>
+<Header></Header>
 		<slot />
+<Footer></Footer>
 	</body>
 	<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
 </html>
