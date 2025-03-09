@@ -1,6 +1,8 @@
 ---
 import { ClientRouter } from "astro:transitions";
-
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+const title = 'Inicio'
 ---
 
 
@@ -12,17 +14,97 @@ import { ClientRouter } from "astro:transitions";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="stylesheet" href="/global.css">
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		
+		<title>{title}</title>
 	<ClientRouter></ClientRouter>
 	</head>
 	<body>
+		<Header></Header>
 		<slot />
+		<Footer></Footer>
 	</body>
 	<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
+	
+
+	<script>
+    
+		const carouselElement = document.getElementById('controls-carousel');
+	
+	const items = [
+		{
+			position: 0,
+			el: document.getElementById('carousel-item-1'),
+		},
+		{
+			position: 1,
+			el: document.getElementById('carousel-item-2'),
+		},
+		{
+			position: 2,
+			el: document.getElementById('carousel-item-3'),
+		},
+		{
+			position: 3,
+			el: document.getElementById('carousel-item-4'),
+		},
+	];
+	
+	// options with default values
+	const options = {
+		defaultPosition: 3,
+		interval: 3000,
+	
+		indicators: {
+			activeClasses: 'bg-white dark:bg-gray-800',
+			inactiveClasses:
+				'bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800',
+			items: [
+				{
+					position: 0,
+					el: document.getElementById('carousel-indicator-1'),
+				},
+				{
+					position: 1,
+					el: document.getElementById('carousel-indicator-2'),
+				},
+				{
+					position: 2,
+					el: document.getElementById('carousel-indicator-3'),
+				},
+				{
+					position: 3,
+					el: document.getElementById('carousel-indicator-4'),
+				},
+			],
+		},
+	
+		// callback functions
+		onNext: () => {
+			console.log('next slider item is shown');
+		},
+		onPrev: () => {
+			console.log('previous slider item is shown');
+		},
+		onChange: () => {
+			console.log('new slider item has been shown');
+		},
+	};
+	
+	// instance options object
+	const instanceOptions = {
+	  id: 'controls-carousel',
+	  override: true
+	};
+	</script>
 </html>
 
 <style>
 	@import "tailwindcss";
+	@import "flowbite/src/themes/default";
+
+	@plugin "flowbite/plugin";
+
+@source "../../node_modules/flowbite";
 	html,
 	body {
 		margin: 0;

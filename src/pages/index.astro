@@ -2,16 +2,18 @@
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 const book=await getCollection("books")
 console.log(book)
+import SliderShow from '../components/SliderShow.astro'
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Venta de Libro La vendicion">
+	
 	<section aria-label="Libros recomendados para programadores">
-		<div class="px-4 mx-auto max-w-screen-xl">
+		<div class="px-4 mx-auto max-w-screen-xl mb-16">
 			<div class="grid gap-6 md:grid-cols-2">	
 				{
 					book.map(book=>
@@ -26,10 +28,10 @@ console.log(book)
 									src={img} alt={title} class="mr-5 w-48 rounded h-full" >
 								</a>
 								<div class="flex flex-col justify-center">
-									<h2 class="mb-2 text-2xl font-bold leading-tight text-white uppercase ">
+									<h2 class="mb-2 text-2xl font-bold leading-tight text-white uppercase w-max" id="title">
 										{title}
 									</h2>
-									<span class="text-[#a8acb3] text-[15px] font-[emoji]">
+									<span class="text-[#a8acb3] text-[15px] font-[emoji] max-w-[16rem]">
 										{description}
 									</span>
 									<span class="text-[#a8acb3] text-[12px] font-[emoji]">
@@ -47,5 +49,7 @@ console.log(book)
 			</div>
 		</div>
 </section>
-
+<section>
+	<SliderShow></SliderShow>
+</section>
 </Layout>
