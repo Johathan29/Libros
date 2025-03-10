@@ -17,7 +17,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	<ClientRouter></ClientRouter>
-<style>
+<style is:global>
 	@import "tailwindcss";
 	html,
 	body {
