@@ -1,0 +1,11 @@
+---
+title: Las 50 Sombras de Grey
+author: Johathan Rosario
+readtime: 300
+img: Shades_of_Grey.jpg
+description: Narrada en gran medida en Seattle, es la primera entrega de una hexalogía 
+---
+
+Cincuenta sombras de Grey narra la historia de Anastasia «Ana» Steele, una joven estudiante, que cursa la carrera de Literatura en la Universidad de Washington, y que vive con su mejor amiga, Katherine «Kate» Kavanagh, quien escribe para el periódico estudiantil de su universidad. Debido a un resfriado, Katherine persuade a Ana para que tome su lugar en la entrevista que le haría a Christian Grey, un joven empresario de veintisiete años, apuesto y exitoso. Ana se ve atraída inmediatamente por él, pero también lo encuentra intimidante. Como resultado, la entrevista no sale del todo bien y le deja a Grey una mala impresión —o al menos eso es lo que ella cree—. Ana trata de consolarse a sí misma con la idea de que lo más probable es que no lo volverá a ver. Sin embargo, se sorprende cuando Grey aparece en la ferretería donde ella trabaja. Durante la compra de varios artículos, incluyendo ataduras de cables y cuerdas, Ana le informa a Grey que Katherine quiere fotografías de él para el artículo. Grey le da a Ana su número de teléfono, lo que hace pensar a Ana que ella le gusta. Katherine presiona a Ana para que llame a Grey y organice una sesión de fotos con su amigo el fotógrafo José Rodríguez.
+
+Al día siguiente, José, Katherine y Ana llegan al hotel donde Grey está hospedado, la sesión de fotos se lleva a cabo y Grey invita a Ana a tomar un café. Ambos hablan sobre sus vidas y Grey le pregunta a Ana si está saliendo con alguien, específicamente con José. Ana responde que no está saliendo con nadie. Después Grey le pregunta sobre su familia. Durante la conversación, Ana se entera de que Grey es soltero, pero que no es el tipo de hombre de «flores y corazones». Esto intriga a Ana, sobre todo después de que él la rescata de la trayectoria de un ciclista que estuvo a punto de atropellarla. Sin embargo, Ana cree que no es lo suficientemente atractiva para Grey, como sí lo es su amiga Katherine.
