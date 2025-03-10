@@ -19,7 +19,7 @@ const {data,slug}=post
 const {title,img,author,description,readtime}=data
 const {Content}=await render(post)
 ---
-<Layout>
+<Layout title={title}>
     <Header></Header>
     <div class="px-4 mx-auto max-w-screen-xl ">
  <h1>Libro</h1>
