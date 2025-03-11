@@ -2,7 +2,7 @@
 title: Las 50 Sombras de Grey
 author: Johathan Rosario
 readtime: 300
-img: Shades_of_Grey.jpg
+img: 50 sombre de grey.jpg
 description: Narrada en gran medida en Seattle, es la primera entrega de una hexalogía 
 ---
 
