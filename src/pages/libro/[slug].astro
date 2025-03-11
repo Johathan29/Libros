@@ -22,15 +22,15 @@ const {Content}=await render(post)
 <Layout>
    
     <div class="px-4 mx-auto max-w-screen-xl ">
- <h1>Libro</h1>
+      <h1 class="uppercase ">{title}</h1>
                         <div class="flex gap=12 text-white py-8">
-                            <aside >
+                            <aside class="w-full" >
                                 <img transition:name={`img-${slug}`} src={`/${img}`} alt={title} class="mr-5 w-72 rounded h-full" >
                            
                                
                             </aside>
                             <main>
-                                <h1 class="uppercase ">{title}</h1>
+                               
                                 <div class="prose">
                                     <Content></Content>
                                 </div>
