@@ -19,11 +19,11 @@ const {data,slug}=post
 const {title,img,author,description,readtime}=data
 const {Content}=await render(post)
 ---
-<Layout>
+<Layout title={title}>
    
     <div class="px-4 mx-auto max-w-screen-xl ">
-      <h1 class="uppercase ">{title}</h1>
-                        <div class="flex gap=12 text-white py-8">
+      <h1 class="mb-2 text-2xl font-bold leading-tight text-white uppercase w-max animate-bounce" >{title}</h1>
+                        <div class="flex gap-12 text-white py-8">
                             <aside class="w-full" >
                                 <img transition:name={`img-${slug}`} src={`/${img}`} alt={title} class="mr-5 w-72 rounded h-full" >
                            
@@ -40,3 +40,17 @@ const {Content}=await render(post)
                            
     </div>
 </Layout>
+<style>
+  @theme {
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+}
+</style>
