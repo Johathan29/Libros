@@ -24,14 +24,14 @@ const {Content}=await render(post)
     <div class="px-4 mx-auto max-w-screen-xl ">
       <h1 class="mb-2 text-2xl font-bold leading-tight text-white uppercase w-max animate-bounce" >{title}</h1>
                         <div class="flex gap-12 text-white py-8">
-                            <aside class="w-full" >
+                            <aside class="md:w-auto w-full" >
                                 <img transition:name={`img-${slug}`} src={`/${img}`} alt={title} class="mr-5 w-72 rounded h-full" >
                            
                                
                             </aside>
-                            <main>
+                            <main class="md:w-3/5 w-full">
                                
-                                <div class="prose">
+                                <div class="prose leading-[2]">
                                     <Content></Content>
                                 </div>
                                 
