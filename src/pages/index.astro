@@ -19,7 +19,7 @@ import SliderShow from '../components/SliderShow.astro'
   <!-- Full-width images with number and caption text -->
 {
 sliders.map((slider,index)=>{
-const {slug,data}=slider
+const {data,slug}=slider
 const {title,img,description}=data
 return(
   <div class="mySlides fade">
