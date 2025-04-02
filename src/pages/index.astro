@@ -23,12 +23,12 @@ import SliderShow from '../components/SliderShow.astro'
 		<div class="px-4 mx-auto max-w-screen-xl mb-16">
 			<div class="grid gap-6 md:grid-cols-2">	
 				{
-					book.map(book=>
+					book.map((book,index)=>
 					{
 						console.log(book)
 						const {slug,data}=book
 						const {title,author,img,readtime,description}=data
-						return(
+						return( index===3 ?
 							<article class="flex">
 								<a href={'/libro/'+slug} class="mb-2 xl:mb-0 transition hover:scale-110">
 								<img transition:name={`img-${slug}`} 
@@ -47,7 +47,7 @@ import SliderShow from '../components/SliderShow.astro'
 								</div>
 								
 							</article>
-
+							: ''
 											
 						)
 					}
