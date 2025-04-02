@@ -11,4 +11,13 @@ description:z.string()
 
     })
 })
-export const collections={books}
+
+const sliders=defineCollection({
+    schema:z.object({
+        title:z.string(),
+        img:z.string(),
+        description:z.string()
+
+    })
+})
+export const collections={books,sliders}
