@@ -20,11 +20,18 @@ const {title,img,author,description,readtime}=data
 const {Content}=await render(post)
 ---
 <Layout title={title}>
-   
+  <div style="
+    background: rgb(14,18,23);
+    background: -moz-linear-gradient(45deg, rgba(14,18,23,1) 9%, rgba(62,63,65,1) 46%, rgba(2,3,3,1) 58%, rgba(10,13,20,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(14,18,23,1) 9%, rgba(62,63,65,1) 46%, rgba(2,3,3,1) 58%, rgba(10,13,20,1) 100%);
+    background: linear-gradient(45deg, rgba(14,18,23,1) 9%, rgba(62,63,65,1) 46%, rgba(2,3,3,1) 58%, rgba(10,13,20,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=&quot;#0e1217&quot;,endColorstr=&quot;#0a0d14&quot;,GradientType=1);
+    
+">
     <div class="px-4 mx-auto max-w-screen-xl ">
-      <h1 class="mb-2 text-2xl font-bold leading-tight text-white uppercase w-max animate-bounce" >{title}</h1>
-                        <div class="flex gap-12 text-white py-8">
-                            <aside class="md:w-auto w-full" >
+      <h1 class="mb-2 text-2xl font-bold leading-tight text-white uppercase w-max animate-bounce py-8" >{title}</h1>
+                        <div class="md:flex block gap-12 text-white ">
+                            <aside class="md:w-auto w-full md:h-full h-[24rem] md:border-0 border-b-[1px] border-gray-100 md:pb-0 pb-4" >
                                 <img transition:name={`img-${slug}`} src={`/${img}`} alt={title} class="mr-5 w-72 rounded h-full" >
                            
                                
@@ -39,6 +46,7 @@ const {Content}=await render(post)
                         </div>
                            
     </div>
+</div>
 </Layout>
 <style>
   @theme {
