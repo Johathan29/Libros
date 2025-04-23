@@ -22,7 +22,7 @@ sliders.map((slider,index)=>{
 const {data,slug}=slider
 const {title,img,description}=data
 return(
-  <div class="mySlides fade">
+  <div class="mySlides fade" style={index===0 ? 'display:block' : 'display:none'}>
     
     
     <div class="mx-auto max-w-screen-xl h-[0rem] relative top-[7rem] md:top-[17rem] text-center">
